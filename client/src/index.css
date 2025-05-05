@@ -1,0 +1,112 @@
+@import "tailwindcss";
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p{
+  margin: 0;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 50px !important; /* Thay đổi kích thước chiều rộng */
+  height: 50px !important; /* Thay đổi kích thước chiều cao */
+  background-size: 20px !important; /* Điều chỉnh kích thước của biểu tượng */
+  /* background-color: #949496; */
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* Để nút nhỏ hơn nữa, bạn có thể thay đổi các giá trị dưới đây */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: black;
+  font-weight: 600;
+  font-size: 18px !important; /* Điều chỉnh kích thước biểu tượng mũi tên */
+}
+.search{
+  background-color: hsla(0, 0%, 60%, .15);
+  border: 1px solid hsla(0, 0%, 60%, .15) !important;
+  border-radius: 5px;
+}
+.input-search
+{
+    padding-right: 3rem;
+    color: #000 !important;
+    width: 100%;
+    padding: 1rem 2.5rem 1rem 1.5rem;
+    height: 35px;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-ban
+{
+  background: #eb6e34;
+  --tw-text-opacity: 1;
+  border-radius: 4px;
+  padding: .5rem 2rem;
+  font-weight: 600;
+}
+.btn-ban a{
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.category
+{
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+.category:hover{
+  --tw-shadow: 0px 8px 20px rgba(24, 75, 156, .2);
+    --tw-shadow-colored: 0px 8px 20px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border: 1px solid #999;
+    z-index: 1000;
+}
+.category img,.product img {
+  transition: transform 0.4s ease;
+  margin-top: 14px;
+  overflow: hidden;
+}
+.product{
+  overflow: hidden; 
+}
+.category:hover img,.product:hover img{
+  transform: scale(1.2);
+}
+.product:hover img{
+  transform: scale(1.1);
+}
+.xem
+{
+  color: #eb6e34;
+  text-decoration-line: underline;
+}
+.button{
+  width: 40px;
+  padding: 6px 12px;
+  border: 1px solid #a2a0a0;
+  font-weight: 600;
+  background-color: #fff;
+  color: black;
+  gap: 10;
+  border-radius: 12px;
+}
+.button-rq
+{
+  width: 50%;
+  background-color: rgb(36, 116, 236);
+  color: white;
+  border-radius: 10px;
+  padding: 6px 20px;
+  border: rgb(36, 116, 236);
+}
+.button-res {
+  background-color: #C92127;
+  color: white;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 6px 20px;
+}
